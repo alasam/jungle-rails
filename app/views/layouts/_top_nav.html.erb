@@ -42,10 +42,10 @@
             <li><%= link_to 'Categories',  [:admin, :categories] %></li>
           </ul>
         </li>
-        <li class="dropdown-toggle">
+        <li class='navbar-brand'>
 
         <% if current_user %>
-        Signed in as <%= current_user.first_name %> </li><li> <%= link_to "Logout", '/logout' %>
+        Hello <%= current_user.first_name %>! </li><li> <%= link_to "Logout", '/logout' %>
       <% else %>
         <%= link_to 'Login', '/login' %> </li><li> <%= link_to 'Signup', '/signup' %>
       <% end %>
